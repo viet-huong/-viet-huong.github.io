@@ -1,0 +1,82 @@
+.why {
+    @include box;
+    height: 100%;
+
+    .layout1062-1 {
+        margin  : 0 auto;
+        position: relative;
+        width   : 1062px;
+
+        @media (max-width: 1061px) {
+            width: 96%;
+        }
+
+        ul {
+            float: left;
+
+            li {
+                width : 50%;
+                float : left;
+                margin: 0px 0px 74px 0;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+
+                .image {
+                    display        : flex;
+                    flex-wrap      : nowrap;
+                    justify-content: space-around;
+                    align-items    : center;
+                    background     : $blue;
+                    border-radius  : 50%;
+                    float          : left;
+                    width          : 80px;
+                    height         : 80px;
+                    margin         : 0 23px 0 0;
+                    text-align     : center;
+
+                    img {
+                        display: block;
+                        margin : 20px 20px;
+                    }
+                }
+
+                div {
+                    float: left;
+
+                    h5 {
+                        display    : block;
+                        margin     : 0 0 3px 0px;
+                        width      : 418px;
+                        height     : 34px;
+                        font-family: 'Abhaya Libre', serif;
+                        font-style : normal;
+                        font-weight: bold;
+                        font-size  : 25px;
+                        color      : #0B1142;
+
+                        @media (max-width: 1061px) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    p {
+                        width      : 378px;
+                        height     : 27px;
+                        font-family: 'Abhaya Libre', serif;
+                        font-style : normal;
+                        font-weight: normal;
+                        font-size  : 20px;
+                        color      : rgba(5, 9, 47, 0.7);
+
+                        @media (max-width: 1061px) {
+                            font-size: 16px;
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

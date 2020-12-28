@@ -1,0 +1,104 @@
+.first_page {
+    @include box;
+    height: 100vh;
+
+
+    .slider {
+        @include box;
+        position: absolute;
+        height  : 100vh;
+
+
+        img {
+            @include box;
+            height: 100%;
+        }
+    }
+
+    .layout7 {
+        margin  : 0 auto;
+        position: relative;
+        width   : 1258px;
+
+        @media (max-width: 1257px) {
+            width: 96%;
+        }
+
+
+        .text {
+            float   : right;
+            position: relative;
+            z-index : 2;
+            margin  : 222px 0px 0 0;
+            width   : 695px;
+
+            @media (max-width: 413px) {
+                margin: 50px 0 0 0;
+            }
+
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-style : normal;
+                font-weight: 700;
+                font-size  : 45px;
+                line-height: 136%;
+                text-align : center;
+                color      : #0B1142;
+                display    : block;
+                width      : 100%;
+
+                @media (max-width: 1257px) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-style : normal;
+                font-weight: 400;
+                font-size  : 45px;
+                line-height: 136%;
+                text-align : center;
+                color      : #0B1142;
+                display    : block;
+                width      : 100%;
+                margin     : 0 0 22px 0;
+
+                @media (max-width: 1257px) {
+                    font-size: 30px;
+                }
+            }
+
+            a {
+                display      : block;
+                overflow     : hidden;
+                margin       : 0 auto 0 auto;
+                width        : 370px;
+                height       : 64px;
+                background   : $blue;
+                border-radius: 50px;
+                font-family  : 'Abhaya Libre', serif;
+                font-style   : normal;
+                font-weight  : 600;
+                font-size    : 25px;
+                line-height  : 64px;
+                text-align   : center;
+                color        : #F0F2FF;
+                @include hover_animation;
+
+                @media (max-width: 767px) {
+                    font-size  : 14px;
+                    width      : 173px;
+                    height     : 34px;
+                    line-height: 34px;
+                }
+
+                &:hover {
+                    background: #0087FB;
+                    @include hover_animation;
+                    @include scale;
+                }
+            }
+        }
+    }
+}

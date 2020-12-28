@@ -1,0 +1,80 @@
+.testimonials {
+    @include box;
+    overflow     : visible;
+    margin-bottom: 70px;
+
+    .layout1000 {
+        width   : 1000px;
+        position: relative;
+        margin  : 0 auto;
+        @media (max-width: 999px) {
+            width: 96%;
+        }
+
+        ul {
+            display  : flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            position : relative;
+            height   : 356px;
+            width    : 1000px;
+            margin   : 0 auto;
+            overflow : visible;
+            z-index  : 5;
+
+            li {
+                img {
+                    width     : 100px;
+                    height    : 100px;
+                    margin    : 48px auto 0 auto;
+                    text-align: center;
+                    position  : relative;
+                    z-index   : 2;
+                }
+
+                .name {
+                    display        : flex;
+                    justify-content: center;
+                    margin         : 17px auto;
+                    font-family    : 'Open Sans', sans-serif;
+                    font-style     : normal;
+                    font-weight    : normal;
+                    font-size      : 20px;
+                    color          : #0B1142;
+                    position       : relative;
+                    z-index        : 2;
+                }
+
+                p {
+                    display    : block;
+                    margin     : 0 82px;
+                    font-family: 'Open Sans', sans-serif;
+                    text-align : center;
+                    font-style : normal;
+                    font-weight: normal;
+                    font-size  : 24px;
+                    color      : #0B1142;
+
+                }
+            }
+
+            &::before {
+                content         : "";
+                float           : right;
+                position        : absolute;
+                z-index         : 1;
+                right           : 12px;
+                bottom          : -12px;
+                border-radius   : 50%;
+                overflow  : hidden;
+                width     : 318px;
+                height    : 318px;
+                border    : 12px solid rgba(111, 185, 248, 0.1);
+                box-sizing: border-box;
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+footer {
+    @include box;
+ 
+    margin    : 0 0 0;
+    padding   : 0 0 0;
+    background: linear-gradient(90deg, #123D7A 0%, #112D55 55.91%, #0F2441 100%);
+
+    .layout350 {
+        margin  : 0 auto;
+        position: relative;
+        width   : 350px;
+
+        @media (max-width: 349px) {
+            width: 96%;
+        }
+
+
+        a {
+            @include box;
+            height    : 100%;
+            text-align: center;
+
+            img {
+                width     : 44px;
+                height    : 36px;
+                margin-top: 23px;
+
+                @media (max-width: 349px) {
+                    height: 11px;
+                    width : 15px;
+                }
+            }
+        }
+
+        h4 {
+            display    : block;
+            overflow   : hidden;
+            text-align : center;
+            font-family: 'Open Sans', sans-serif;
+            font-style : normal;
+            font-weight: normal;
+            font-size  : 23px;
+            line-height: 136%;
+            color      : #F0F2FF;
+
+            @media (max-width: 349px) {
+                font-size: 7px;
+            }
+        }
+
+        ul {
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            margin         : 12px auto;
+
+            li {
+                box-sizing     : border-box;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                margin         : 0px 15px;
+                height         : 19px;
+                width          : 19px;
+                @media (max-width: 349px){
+                    margin: 0 5px;
+                }
+
+                a {
+                    box-sizing: border-box;
+
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    height         : 19px;
+                    width          : 19px;
+                    @include hover_animation;
+
+                    &:hover {
+
+                        -webkit-box-shadow: 10px 10px 50px 20px #6B7AFF;
+                        box-shadow        : 10px 10px 50px 20px #6B7AFF;
+                        @include hover_animation;
+                    }
+
+                    img {
+                        margin: 0;
+                        height: 19px;
+                        width : 19px;
+
+                        @media (max-width: 349px) {
+                            height: 6px;
+                            width : 6px;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            box-sizing    : border-box;
+            text-align    : center;
+            font-family   : 'Open Sans', sans-serif;
+            font-style    : normal;
+            font-weight   : normal;
+            font-size     : 14px;
+            color         : #F0F2FF;
+            padding-bottom: 23px;
+
+            @media (max-width: 349px) {
+                font-size: 4px;
+            }
+        }
+    }
+}

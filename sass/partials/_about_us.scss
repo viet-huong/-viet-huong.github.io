@@ -1,0 +1,99 @@
+.about_us {
+    @include box;
+    height  : 100%;
+    overflow: visible;
+
+    &::after {
+        content      : "";
+        overflow     : hidden;
+        position     : absolute;
+        z-index      : 1;
+        top          : -176px;
+        right        : -186px;
+        height       : 508px;
+        width        : 508px;
+        background   : rgba(111, 185, 248, 0.3);
+        border-radius: 50%;
+
+
+    }
+
+    .layout1238 {
+        width   : 1238px;
+        margin  : 0 auto;
+        position: relative;
+
+        .top-article {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            position       : relative;
+            z-index        : 2;
+
+            p {
+                width      : 622;
+                height     : 198px;
+                font-family: 'Open Sans', sans-serif;
+                font-style : normal;
+                font-weight: normal;
+                font-size  : 20px;
+                line-height: 140%;
+                color      : #0B1142;
+                margin     : 0 105px 0 60px;
+            }
+
+            img {
+                position: relative;
+                z-index : 2;
+                width   : 511px;
+                height  : 396px;
+                margin  : 0 60px 0 0;
+
+            }
+        }
+
+        .bottom-article {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            position       : relative;
+            z-index        : 2;
+
+            img {
+                width   : 511px;
+                height  : 396px;
+                position: relative;
+                z-index : 2;
+                margin  : 67px 0 0 60px;
+            }
+
+            p {
+                position   : relative;
+                z-index    : 2;
+                width      : 622;
+                height     : 198px;
+                font-family: 'Open Sans', sans-serif;
+                font-style : normal;
+                font-weight: normal;
+                font-size  : 20px;
+                line-height: 140%;
+                color      : #0B1142;
+                margin     : 0 60px 0 105px;
+            }
+        }
+    }
+
+
+    &::before {
+        content      : "";
+        overflow     : hidden;
+        position     : absolute;
+        z-index      : 1;
+        left         : -171px;
+        bottom       : -204px;
+        height       : 508px;
+        width        : 508px;
+        background   : rgba(111, 185, 248, 0.3);
+        border-radius: 50%;
+    }
+}
