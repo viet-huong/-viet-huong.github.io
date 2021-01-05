@@ -2,5 +2,5 @@ prepros.config
 node_modules/
 debug.log
 .nvm/
-.vs/
 workspace.code-workspace
+.vs/
