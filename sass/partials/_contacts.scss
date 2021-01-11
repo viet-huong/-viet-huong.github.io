@@ -2,7 +2,7 @@
     @include box;
     height    : 100%;
     background: $blue;
-    
+
     &::after {
         content      : "";
         height       : 230px;
@@ -19,13 +19,21 @@
         margin  : 0 auto;
         position: relative;
         width   : 1110px;
-        @media (max-width: 1109px) {width: 96%;}
-      
+
+        @media (max-width: 1109px) {
+            width: 96%;
+        }
+
         .center {
             display        : flex;
             justify-content: space-between;
-            position: relative;
-            z-index: 2;
+            position       : relative;
+            z-index        : 2;
+
+            @media (max-width: 948px) {
+
+                display: block;
+            }
 
 
             ul {
@@ -36,6 +44,10 @@
                 li {
                     display: block;
                     margin : 0 0 50px 0;
+
+                    @media (max-width: 948px) {
+                        display: inline-block;
+                    }
 
                     b {
                         display    : block;
@@ -62,6 +74,7 @@
                         width : 40px;
                         float : left;
                         margin: 0 23px 0 0;
+
                     }
 
                     .mail {
@@ -102,26 +115,34 @@
                         @include hover_animation;
                     }
                 }
+            }
 
-                .map {
-                    display : block;
-                    height  : 429px;
-                    width   : 538px;
+            .map {
+                display : block;
+                height  : 429px;
+                width   : 538px;
+                position: relative;
+                z-index : 2;
+
+                @media (max-width: 650px) {
+                    height    : 100%;
+                    width     : 100%;
+                    text-align: center;
+                }
+
+                .iframe {
+                    height  : 100%;
+                    width   : 100%;
                     position: relative;
                     z-index : 2;
 
-                    .iframe {
-                        height: 100%;
-                        width : 100%;
-                        position: relative;
-                        z-index : 2;
 
-                    }
                 }
             }
-
         }
+
     }
+
 
     &::before {
         content      : "";
