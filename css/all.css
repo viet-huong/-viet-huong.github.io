@@ -460,9 +460,10 @@ header .number .phone_number a:hover {
   margin: 222px 0px 0 0;
   width: 695px;
 }
-@media (max-width: 413px) {
+@media (max-width: 767px) {
   .first_page .layout7 .text {
-    margin: 50px 0 0 0;
+    margin: 200px 0 0 0;
+    width: 300px;
   }
 }
 .first_page .layout7 .text h2 {
@@ -481,6 +482,11 @@ header .number .phone_number a:hover {
     font-size: 30px;
   }
 }
+@media (max-width: 767px) {
+  .first_page .layout7 .text h2 {
+    font-size: 15px;
+  }
+}
 .first_page .layout7 .text p {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -496,6 +502,11 @@ header .number .phone_number a:hover {
 @media (max-width: 1257px) {
   .first_page .layout7 .text p {
     font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .first_page .layout7 .text p {
+    font-size: 15px;
   }
 }
 .first_page .layout7 .text a {
@@ -736,12 +747,23 @@ header .number .phone_number a:hover {
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 1238px) {
+  .about_us .layout1238 {
+    width: 96%;
+  }
+}
 .about_us .layout1238 .top-article {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 1196px) {
+  .about_us .layout1238 .top-article {
+    display: block;
+    text-align: center;
+  }
 }
 .about_us .layout1238 .top-article p {
   width: 622;
@@ -754,12 +776,28 @@ header .number .phone_number a:hover {
   color: #0B1142;
   margin: 0 105px 0 60px;
 }
+@media (max-width: 895px) {
+  .about_us .layout1238 .top-article p {
+    font-size: 16px;
+  }
+}
 .about_us .layout1238 .top-article img {
   position: relative;
   z-index: 2;
   width: 511px;
   height: 396px;
   margin: 0 60px 0 0;
+}
+@media (max-width: 1196px) {
+  .about_us .layout1238 .top-article img {
+    margin: 0;
+  }
+}
+@media (max-width: 1196px) and (max-width: 767px) {
+  .about_us .layout1238 .top-article img {
+    width: 250px;
+    height: 200px;
+  }
 }
 .about_us .layout1238 .bottom-article {
   display: flex;
@@ -768,12 +806,29 @@ header .number .phone_number a:hover {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 1196px) {
+  .about_us .layout1238 .bottom-article {
+    display: block;
+    text-align: center;
+  }
+}
 .about_us .layout1238 .bottom-article img {
   width: 511px;
   height: 396px;
   position: relative;
   z-index: 2;
   margin: 67px 0 0 60px;
+}
+@media (max-width: 1196px) {
+  .about_us .layout1238 .bottom-article img {
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .about_us .layout1238 .bottom-article img {
+    width: 250px;
+    height: 200px;
+  }
 }
 .about_us .layout1238 .bottom-article p {
   position: relative;
@@ -787,6 +842,11 @@ header .number .phone_number a:hover {
   line-height: 140%;
   color: #0B1142;
   margin: 0 60px 0 105px;
+}
+@media (max-width: 895px) {
+  .about_us .layout1238 .bottom-article p {
+    font-size: 16px;
+  }
 }
 .about_us::before {
   content: "";
@@ -816,7 +876,7 @@ header .number .phone_number a:hover {
   position: relative;
   margin: 0 auto;
 }
-@media (max-width: 999px) {
+@media (max-width: 1020px) {
   .testimonials .layout1000 {
     width: 96%;
   }
@@ -832,6 +892,16 @@ header .number .phone_number a:hover {
   margin: 0 auto;
   overflow: visible;
   z-index: 5;
+}
+@media (max-width: 1000px) {
+  .testimonials .layout1000 ul {
+    max-width: 980px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonials .layout1000 ul {
+    max-width: 750px;
+  }
 }
 .testimonials .layout1000 ul li img {
   width: 100px;
@@ -915,6 +985,11 @@ header .number .phone_number a:hover {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 948px) {
+  .contacts .layout1110 .center {
+    display: block;
+  }
+}
 .contacts .layout1110 .center ul {
   display: block;
   height: 429px;
@@ -923,6 +998,11 @@ header .number .phone_number a:hover {
 .contacts .layout1110 .center ul li {
   display: block;
   margin: 0 0 50px 0;
+}
+@media (max-width: 948px) {
+  .contacts .layout1110 .center ul li {
+    display: inline-block;
+  }
 }
 .contacts .layout1110 .center ul li b {
   display: block;
@@ -975,14 +1055,21 @@ header .number .phone_number a:hover {
   color: #F0F2FF;
   transition: all 2000ms ease;
 }
-.contacts .layout1110 .center ul .map {
+.contacts .layout1110 .center .map {
   display: block;
   height: 429px;
   width: 538px;
   position: relative;
   z-index: 2;
 }
-.contacts .layout1110 .center ul .map .iframe {
+@media (max-width: 650px) {
+  .contacts .layout1110 .center .map {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+.contacts .layout1110 .center .map .iframe {
   height: 100%;
   width: 100%;
   position: relative;
